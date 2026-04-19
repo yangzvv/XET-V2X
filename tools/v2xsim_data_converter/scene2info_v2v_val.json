@@ -1,0 +1,86 @@
+{
+    "scene_5": {
+        "scene_token": "ofw501ws5eyia0341m1f83ofwf51w9q8",
+        "num_frames": 100,
+        "num_valid_coop": 94,
+        "total_objs_veh": 763,
+        "total_objs_coop": 1195
+    },
+    "scene_15": {
+        "scene_token": "117y6rn0i23449rgej23ojcgforc6t15",
+        "num_frames": 100,
+        "num_valid_coop": 77,
+        "total_objs_veh": 1273,
+        "total_objs_coop": 1928
+    },
+    "scene_25": {
+        "scene_token": "5k7r5o14x9w6781ap73em40f109w3gur",
+        "num_frames": 100,
+        "num_valid_coop": 58,
+        "total_objs_veh": 985,
+        "total_objs_coop": 1290
+    },
+    "scene_36": {
+        "scene_token": "l08s5i5b8u5z5ai4ul3tdkwsq2nh47lx",
+        "num_frames": 100,
+        "num_valid_coop": 91,
+        "total_objs_veh": 1532,
+        "total_objs_coop": 1884
+    },
+    "scene_45": {
+        "scene_token": "c0i0kq6ka5mnocvkc3x24u7o02c93b09",
+        "num_frames": 100,
+        "num_valid_coop": 57,
+        "total_objs_veh": 1233,
+        "total_objs_coop": 1459
+    },
+    "scene_56": {
+        "scene_token": "762huvy2w431yi0vv0feo050zivdzz8o",
+        "num_frames": 100,
+        "num_valid_coop": 82,
+        "total_objs_veh": 1042,
+        "total_objs_coop": 1396
+    },
+    "scene_65": {
+        "scene_token": "906r9j2f4tu0a476if9007bve201n52q",
+        "num_frames": 100,
+        "num_valid_coop": 86,
+        "total_objs_veh": 812,
+        "total_objs_coop": 1286
+    },
+    "scene_76": {
+        "scene_token": "c30f60s0xf2fik77e2p87545940719h2",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 580,
+        "total_objs_coop": 957
+    },
+    "scene_85": {
+        "scene_token": "a0de0mchuul976kvw3e69o23id7g49u0",
+        "num_frames": 100,
+        "num_valid_coop": 96,
+        "total_objs_veh": 645,
+        "total_objs_coop": 1549
+    },
+    "scene_86": {
+        "scene_token": "4hwq75oul322vmms30fzp30jrd45w815",
+        "num_frames": 100,
+        "num_valid_coop": 99,
+        "total_objs_veh": 907,
+        "total_objs_coop": 1162
+    },
+    "scene_95": {
+        "scene_token": "gjk69078nsexj567k99e546sux035145",
+        "num_frames": 100,
+        "num_valid_coop": 95,
+        "total_objs_veh": 992,
+        "total_objs_coop": 1449
+    },
+    "scene_96": {
+        "scene_token": "h3y9z0ape66d76ei3zxgu81382my0fvc",
+        "num_frames": 100,
+        "num_valid_coop": 58,
+        "total_objs_veh": 1073,
+        "total_objs_coop": 1260
+    }
+}

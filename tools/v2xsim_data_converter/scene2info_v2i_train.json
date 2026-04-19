@@ -1,0 +1,324 @@
+{
+    "scene_2": {
+        "scene_token": "695k6w086m10h029b97n2zr7016ospc3",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1132,
+        "total_objs_coop": 1836
+    },
+    "scene_4": {
+        "scene_token": "8fvf8y39zpu77129u39j897si62jd98e",
+        "num_frames": 100,
+        "num_valid_coop": 90,
+        "total_objs_veh": 444,
+        "total_objs_coop": 1178
+    },
+    "scene_11": {
+        "scene_token": "dbi6p7n8v723c7t1s6z7830u4399514l",
+        "num_frames": 100,
+        "num_valid_coop": 62,
+        "total_objs_veh": 864,
+        "total_objs_coop": 2184
+    },
+    "scene_12": {
+        "scene_token": "wgh352t5i6vv1z7b7c0770v5yb8iht4m",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 523,
+        "total_objs_coop": 3125
+    },
+    "scene_13": {
+        "scene_token": "xj8d1xde704mat5806hzp4fkkc9j031p",
+        "num_frames": 100,
+        "num_valid_coop": 85,
+        "total_objs_veh": 938,
+        "total_objs_coop": 3163
+    },
+    "scene_14": {
+        "scene_token": "956g5g9f59ul9f20s643am7j2r200gog",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1108,
+        "total_objs_coop": 3342
+    },
+    "scene_20": {
+        "scene_token": "9a3c97190juavvw27i7799i724zrb71d",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1056,
+        "total_objs_coop": 2773
+    },
+    "scene_21": {
+        "scene_token": "t77afy2s6zcwvu19vxn3529x78j2fr4f",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1215,
+        "total_objs_coop": 4530
+    },
+    "scene_22": {
+        "scene_token": "w775a716af12zn8emh435663k775odr0",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1166,
+        "total_objs_coop": 2509
+    },
+    "scene_23": {
+        "scene_token": "df4e23v89n2je9f518j18z9eouc7z8s1",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1057,
+        "total_objs_coop": 3248
+    },
+    "scene_24": {
+        "scene_token": "13h2lg915198yajbcrp24p94206dnpme",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 940,
+        "total_objs_coop": 2732
+    },
+    "scene_30": {
+        "scene_token": "23l36l6d78y811p4b2q2w3wu8gey4jaf",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1389,
+        "total_objs_coop": 3594
+    },
+    "scene_31": {
+        "scene_token": "l4n2p7ns26x6p25247ycq809dlh718y0",
+        "num_frames": 100,
+        "num_valid_coop": 86,
+        "total_objs_veh": 843,
+        "total_objs_coop": 1269
+    },
+    "scene_32": {
+        "scene_token": "t7qk2sei8w64j41f8rozde15dqcgbmc3",
+        "num_frames": 100,
+        "num_valid_coop": 67,
+        "total_objs_veh": 877,
+        "total_objs_coop": 1758
+    },
+    "scene_33": {
+        "scene_token": "a2s507q88a9o1c9678ye63jg69n35s3c",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1273,
+        "total_objs_coop": 2001
+    },
+    "scene_34": {
+        "scene_token": "3a2ya6lsr12x48t72k0v4c3e59247e49",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 646,
+        "total_objs_coop": 2234
+    },
+    "scene_40": {
+        "scene_token": "fz522mr7d311t14g1cy877c3px8q1m50",
+        "num_frames": 100,
+        "num_valid_coop": 53,
+        "total_objs_veh": 1411,
+        "total_objs_coop": 2085
+    },
+    "scene_41": {
+        "scene_token": "uk7vc473z5ntv864p5ggb51jfnp0zqq0",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1460,
+        "total_objs_coop": 3375
+    },
+    "scene_42": {
+        "scene_token": "9uqxa40p9ovhyg2747u7dydi2bqj2aq4",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 963,
+        "total_objs_coop": 3494
+    },
+    "scene_43": {
+        "scene_token": "g5rbk3kn54g549d40246s0j8v3uyd5lc",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1073,
+        "total_objs_coop": 2341
+    },
+    "scene_44": {
+        "scene_token": "7rwb6x0ee1053vcm402e2d6ca7116a1a",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1220,
+        "total_objs_coop": 2006
+    },
+    "scene_50": {
+        "scene_token": "u26od88ox40vqmvmg74iezu7ksjj0710",
+        "num_frames": 100,
+        "num_valid_coop": 89,
+        "total_objs_veh": 804,
+        "total_objs_coop": 1440
+    },
+    "scene_51": {
+        "scene_token": "mn21v085w3j945gmh325h8zofu20wltw",
+        "num_frames": 100,
+        "num_valid_coop": 90,
+        "total_objs_veh": 157,
+        "total_objs_coop": 538
+    },
+    "scene_52": {
+        "scene_token": "tdy7sk803p0gv2yvmv1504y28gg6r723",
+        "num_frames": 100,
+        "num_valid_coop": 86,
+        "total_objs_veh": 865,
+        "total_objs_coop": 1505
+    },
+    "scene_53": {
+        "scene_token": "09j8qd2oxcrd1ptv6n0136bb5835v126",
+        "num_frames": 100,
+        "num_valid_coop": 75,
+        "total_objs_veh": 1585,
+        "total_objs_coop": 1891
+    },
+    "scene_54": {
+        "scene_token": "u3742eh2t999otum4ltppcp31e91t336",
+        "num_frames": 100,
+        "num_valid_coop": 97,
+        "total_objs_veh": 750,
+        "total_objs_coop": 1991
+    },
+    "scene_60": {
+        "scene_token": "k08lh35b9m08z9vafslrvk056fo452xp",
+        "num_frames": 100,
+        "num_valid_coop": 75,
+        "total_objs_veh": 753,
+        "total_objs_coop": 1777
+    },
+    "scene_61": {
+        "scene_token": "pk11xd1sk9kshz8e60f6erh02453iu31",
+        "num_frames": 100,
+        "num_valid_coop": 79,
+        "total_objs_veh": 439,
+        "total_objs_coop": 1660
+    },
+    "scene_62": {
+        "scene_token": "7u8ufbol1w3i9p7fp683qzl6gc17yn05",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 709,
+        "total_objs_coop": 3014
+    },
+    "scene_63": {
+        "scene_token": "d85xh10849nncc3uqjj5ay8v9n404541",
+        "num_frames": 100,
+        "num_valid_coop": 72,
+        "total_objs_veh": 979,
+        "total_objs_coop": 2225
+    },
+    "scene_64": {
+        "scene_token": "31s6agg90pj3g89q613m4vsc8w8flarp",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 517,
+        "total_objs_coop": 2034
+    },
+    "scene_70": {
+        "scene_token": "1704k89771hza60137681v6j15bcrxgy",
+        "num_frames": 100,
+        "num_valid_coop": 73,
+        "total_objs_veh": 1086,
+        "total_objs_coop": 2531
+    },
+    "scene_71": {
+        "scene_token": "njq63lfzn3bqju5fpn54c06i13lf7457",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1203,
+        "total_objs_coop": 2990
+    },
+    "scene_72": {
+        "scene_token": "57q2s5p0o2m2w578egn5sloy1q5p7ze1",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1624,
+        "total_objs_coop": 3058
+    },
+    "scene_73": {
+        "scene_token": "8m59q56x8wy5gse96fms136i5q7ffal7",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 761,
+        "total_objs_coop": 2861
+    },
+    "scene_74": {
+        "scene_token": "7x63922373gi9r5421bgfhfr44f49e67",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 845,
+        "total_objs_coop": 3115
+    },
+    "scene_80": {
+        "scene_token": "v5114i4srn2v1nj63fr71yydl8r573x2",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 962,
+        "total_objs_coop": 3394
+    },
+    "scene_81": {
+        "scene_token": "g9xo00roih298xm136yy8im70sfz51o5",
+        "num_frames": 100,
+        "num_valid_coop": 64,
+        "total_objs_veh": 891,
+        "total_objs_coop": 1843
+    },
+    "scene_82": {
+        "scene_token": "w031r4773ybhss0lc57ia92290ca879w",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 929,
+        "total_objs_coop": 2427
+    },
+    "scene_83": {
+        "scene_token": "i9072arqzunple195j6cz418b725fc49",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 234,
+        "total_objs_coop": 1856
+    },
+    "scene_84": {
+        "scene_token": "q13ef47vm080a7hgv7384u6ybhuq2a0a",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 1247,
+        "total_objs_coop": 2886
+    },
+    "scene_90": {
+        "scene_token": "4z0cgu8212dxr3641gq99qcm0991ys6g",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 896,
+        "total_objs_coop": 3169
+    },
+    "scene_91": {
+        "scene_token": "265snydmw714u49qua391n3840c31p95",
+        "num_frames": 100,
+        "num_valid_coop": 88,
+        "total_objs_veh": 989,
+        "total_objs_coop": 2822
+    },
+    "scene_92": {
+        "scene_token": "4lm52c2c47awen0o0u1e9r7i7c4ffm4c",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 868,
+        "total_objs_coop": 1163
+    },
+    "scene_94": {
+        "scene_token": "fvvxlr82ccj71j955qb1ym9146br86b0",
+        "num_frames": 100,
+        "num_valid_coop": 66,
+        "total_objs_veh": 871,
+        "total_objs_coop": 1418
+    },
+    "scene_100": {
+        "scene_token": "v7fe955db4a1g87695q7201lmiby7746",
+        "num_frames": 100,
+        "num_valid_coop": 100,
+        "total_objs_veh": 812,
+        "total_objs_coop": 2130
+    }
+}

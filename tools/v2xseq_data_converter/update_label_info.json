@@ -1,0 +1,1364 @@
+{
+    "vehicle-side": [
+      {
+        "frame": "000872",
+        "token": "9a45fb51-7ca2-352d-96a6-d1dfae4a74ad",
+        "operation": []
+      },
+      {
+        "frame": "000876",
+        "token": "ebec8a29-16a5-3dfe-928c-b88e0831a5f6",
+        "operation": []
+      },
+      {
+        "frame": "000877",
+        "token": "2247029f-9679-3012-8ca5-57b0dc8e7e27",
+        "operation": []
+      },
+      {
+        "frame": "000878",
+        "token": "b058f816-bd84-352e-a36d-045534593483",
+        "operation": []
+      },
+      {
+        "frame": "000879",
+        "token": "0ac0cc27-4a73-3528-bd2c-67c8e4598e13",
+        "operation": []
+      },
+      {
+        "frame": "001330",
+        "token": "a1f30eee-b197-391c-832a-da623d475f0f",
+        "operation": []
+      },
+      {
+        "frame": "001852",
+        "token": "e36dabe1-f2fd-3386-a832-56d8b7bfe787",
+        "operation": []
+      },
+      {
+        "frame": "003097",
+        "token": "729eb352-1d59-3e99-a28c-b07b1c6ace90",
+        "operation": []
+      },
+      {
+        "frame": "003130",
+        "token": "bf583177-988b-3752-bcba-8ac258053949",
+        "operation": []
+      },
+      {
+        "frame": "005325",
+        "token": "b869f6db-c823-3817-99c8-f8c6bc3dbc52",
+        "operation": [
+          "Pedestrian",
+          "028323"
+        ]
+      },
+      {
+        "frame": "008009",
+        "token": "c92304c8-c7dd-3bc1-b715-49d5a16a70c2",
+        "operation": [
+          "Motorcyclist",
+          "030548"
+        ]
+      },
+      {
+        "frame": "009503",
+        "token": "539de1ea-bf30-3c07-8679-8744b885de7c",
+        "operation": []
+      },
+      {
+        "frame": "011091",
+        "token": "4c9f8cf2-70be-34ae-a42a-fc49f3f49c4e",
+        "operation": [
+          "Car",
+          "013545"
+        ]
+      },
+      {
+        "frame": "011212",
+        "token": "9a960abd-7378-309e-a58c-322d01b23c42",
+        "operation": [
+          "Motorcyclist",
+          "023063"
+        ]
+      },
+      {
+        "frame": "011298",
+        "token": "84cf09e1-4ac2-3f93-8cd4-80160c14fe5b",
+        "operation": [
+          "Pedestrian",
+          "018052"
+        ]
+      },
+      {
+        "frame": "012124",
+        "token": "c7d403ca-e243-3dcb-b37e-f7c1f91e3b29",
+        "operation": [
+          "Pedestrian",
+          "017519"
+        ]
+      },
+      {
+        "frame": "012124",
+        "token": "2bbb71e7-da77-3026-b4b2-c48a76127f91",
+        "operation": [
+          "Motorcyclist",
+          "017534"
+        ]
+      },
+      {
+        "frame": "012961",
+        "token": "b005605b-1b1b-35ec-9d85-2e891b5d6eaf",
+        "operation": []
+      },
+      {
+        "frame": "013301",
+        "token": "dfefe710-2a11-3e00-b54a-bf4faee3a820",
+        "operation": [
+          "Car",
+          "026472"
+        ]
+      },
+      {
+        "frame": "013331",
+        "token": "c995889b-089b-340a-8fc5-7f60bdaffe42",
+        "operation": [
+          "Motorcyclist",
+          "026786"
+        ]
+      },
+      {
+        "frame": "013523",
+        "token": "e76a3626-0635-37c2-964b-56d0935219ff",
+        "operation": []
+      },
+      {
+        "frame": "014414",
+        "token": "007ac9f0-ce46-3fe8-94f3-b228e718f923",
+        "operation": [
+          "Cyclist",
+          "007225"
+        ]
+      },
+      {
+        "frame": "015927",
+        "token": "e5b5892c-4097-3679-adf3-915c62cae4f9",
+        "operation": [
+          "Motorcyclist",
+          "024969"
+        ]
+      },
+      {
+        "frame": "015959",
+        "token": "26400bd1-0c6c-3f8c-aec5-73941df9d390",
+        "operation": [
+          "Motorcyclist",
+          "024969"
+        ]
+      },
+      {
+        "frame": "016086",
+        "token": "a324008d-4c5f-3caa-a6a3-e83bd523d2f4",
+        "operation": [
+          "Motorcyclist",
+          "018913"
+        ]
+      },
+      {
+        "frame": "016158",
+        "token": "a52de117-febb-3584-a41e-9a47f1d02f29",
+        "operation": [
+          "Cyclist",
+          "018870"
+        ]
+      },
+      {
+        "frame": "016418",
+        "token": "471989b4-f949-30fe-9281-07bbd0dd8884",
+        "operation": []
+      },
+      {
+        "frame": "016616",
+        "token": "aa8a87d1-7d07-307a-88a9-52920fb117e5",
+        "operation": [
+          "Motorcyclist",
+          "032184"
+        ]
+      },
+      {
+        "frame": "016688",
+        "token": "413a3ad8-2306-3424-80a5-ff9e07f5d778",
+        "operation": []
+      }
+    ],
+    "infrastructure-side": [
+      {
+        "frame": "003490",
+        "token": "bc0aacb3-6c44-3f66-b339-c9b9883a850f",
+        "operation": [
+          "Car",
+          "002907"
+        ]
+      },
+      {
+        "frame": "003491",
+        "token": "07b6babe-3eac-3a93-996a-247c00e97c72",
+        "operation": [
+          "Car",
+          "002907"
+        ]
+      },
+      {
+        "frame": "012292",
+        "token": "315b0e80-694b-306f-887a-485b1ac4f64c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012293",
+        "token": "e3c6621b-7777-39c6-a987-c8a233189f64",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012294",
+        "token": "64d4f701-d956-3722-a2d1-4e6a3a86d1bc",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012295",
+        "token": "44489901-bde2-3096-9714-937b80250347",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012296",
+        "token": "4bb2088b-259d-3193-ad3d-40dc9da96797",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012297",
+        "token": "7c94054c-9fa6-3732-b9d4-efa413875bb0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012298",
+        "token": "c81c6d6d-17af-3c81-8824-b7d5bd731709",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012299",
+        "token": "7da659c7-e5f5-3f16-a935-6bbc89bc45dd",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012300",
+        "token": "ee869652-a244-33ea-ada8-d5fa5e5e8189",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012301",
+        "token": "e908dc22-1a2b-3216-8524-38de15d76d1a",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012302",
+        "token": "9a4c6869-73ed-39c8-a9f2-a80a26394d95",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012303",
+        "token": "c7c405b7-59ee-3501-b0b6-60c97d0590e2",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012304",
+        "token": "aeb96b18-3e6a-3d07-bacf-5d0e2754419e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012307",
+        "token": "12f815d8-ad19-3e6f-af5f-28fd68a3aac5",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012308",
+        "token": "87b3de0a-1599-36b1-9991-851ed20ada6f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012309",
+        "token": "2e0c90e9-013f-3933-885b-3fa5bf8babfb",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012310",
+        "token": "8b05d6bc-b047-37bb-ac50-26ebe2357b1b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012311",
+        "token": "cc6cd3aa-2e55-3bed-95ca-0b47f478e416",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012312",
+        "token": "8b229437-5c2a-3d37-832a-df02c9d7b4c5",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012313",
+        "token": "d7bada8d-6c09-3afa-ab25-965ceb376288",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012314",
+        "token": "7d1eb200-6c51-318c-8ff3-a49643a9990c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012315",
+        "token": "142d3b92-0212-394b-a89e-ca670fa997ad",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012316",
+        "token": "a1d577a4-bafc-399b-aeae-f73ce37c5d3f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012317",
+        "token": "03ed3309-cc00-33e8-aeb5-901140992a00",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012318",
+        "token": "957b1600-cc37-311e-a01d-effc7220aa4c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012319",
+        "token": "d6c6a511-5260-3d98-83f2-a8e0c88623e2",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012320",
+        "token": "362c9057-f247-3f54-9bd8-beba50fe5d7a",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012321",
+        "token": "b13d4318-676c-313e-90dc-8930290b14b3",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012322",
+        "token": "62f63ea1-ec78-399a-b708-4c099078d9fe",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012323",
+        "token": "91abbc02-a47a-3bf8-922c-4e516fae6798",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012324",
+        "token": "863e7ad3-cf37-3ec5-81d8-ba86c5bc1689",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012325",
+        "token": "d17ae062-4b28-35a4-a05c-61b08d4c7f8f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012326",
+        "token": "e1a4e9a1-6dc1-3552-b202-acf3baf62890",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012327",
+        "token": "f7df727c-417d-3149-a9ca-8fdc5d4d7aa4",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012328",
+        "token": "8e257a4e-b4cb-323a-b797-23e4cde46e08",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012329",
+        "token": "0fd13b88-7412-3181-b08a-27cd092371e5",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012330",
+        "token": "3303b949-a819-313d-8220-ec96ce36d9b3",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012331",
+        "token": "a862ecb9-3c9a-318e-8a93-732ebcb36e4f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012332",
+        "token": "94a857f7-9bb0-3d79-b381-1f6c96361168",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012333",
+        "token": "121b2039-79ae-38ae-a7f6-105c4b05cffa",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012334",
+        "token": "43aec6f3-8d6f-36f6-9600-cf9f4d67ba3b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012335",
+        "token": "1f46a09e-b01c-3e38-ba64-be57aa12f420",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012336",
+        "token": "3dcef59d-a604-3bea-b890-94e15d0d155f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012338",
+        "token": "dafbc309-016f-37ad-b980-73af2e4f724c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012339",
+        "token": "41408064-4ebb-3c1f-a781-dde6478d0ebc",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012340",
+        "token": "97d1960a-e89d-31b4-a2db-8f8dac84beba",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012341",
+        "token": "c23bc890-80aa-3638-82ab-54c55401eb5c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012342",
+        "token": "25cf0e29-28a9-33df-b9e9-16214ca1a6d4",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012343",
+        "token": "346861fb-82dd-3c90-9ded-c615c2f7f5ab",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012344",
+        "token": "2dc42359-8872-3e68-b55d-c6274182698d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012345",
+        "token": "959aadd5-293a-32ce-95ec-507f4d5ef2e0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012348",
+        "token": "a3c788a5-cb63-3929-accd-4b872806ee5c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012349",
+        "token": "3b2078f3-c3d7-3900-9902-e2fac70f725d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012350",
+        "token": "54fc094e-3464-368f-9139-0688c63dbc48",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012351",
+        "token": "bc3a0ef6-1987-3e41-9432-28480d28124a",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012352",
+        "token": "3557e94e-4a9d-3fe3-bd3a-b6e5977fc349",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012353",
+        "token": "761ffd67-f52b-347f-ab10-80dc5aab4eff",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012354",
+        "token": "ad91af87-8483-3fe8-9008-9cba120e561c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012355",
+        "token": "19d5fc35-79ed-3554-b715-0c5c450eda3f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012356",
+        "token": "dbd7604a-0c15-3446-b081-7addc483ff49",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012357",
+        "token": "a0f7f4ab-41fe-3a24-8e36-e9579a2bc40c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012358",
+        "token": "a5d408ce-61be-3241-9792-b3d77d95fa8d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012359",
+        "token": "854703d0-44f3-3d83-a50f-d44f5a14160d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012360",
+        "token": "d34fd5b5-3c4e-3ab4-9761-4165c6ffacfd",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012361",
+        "token": "17eb750c-f5fc-36a0-aa87-57dade8c3b36",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012362",
+        "token": "1d60aea3-5fb1-37b4-9e2f-20cf8d9720e1",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012363",
+        "token": "19238150-732a-3f8c-bc89-8458b113122d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012364",
+        "token": "8ecd05a5-0bc4-3c0b-ba07-716ec91a8c68",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012365",
+        "token": "d1330aca-5e01-3990-a7db-00b21e7e0e43",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012366",
+        "token": "2d331f9b-67c4-36ef-89c5-2e67f3dac748",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012367",
+        "token": "62a35087-8c12-362d-bbd2-ca641e5ef67c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012368",
+        "token": "4a45eb52-d741-323f-b90a-331b49bff696",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012369",
+        "token": "8456204b-517a-3423-83fa-a8a274b55f06",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012371",
+        "token": "4eb24898-8c61-37a4-a1f5-a2c9b840638b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012372",
+        "token": "8d41ccf4-9504-38c6-9657-a3c8e489ec4e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012373",
+        "token": "193e2fbb-6d3d-324b-9ad0-bfb61551c19e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012374",
+        "token": "8c699d9c-781f-3c0d-9ea7-1acf894fafc0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012375",
+        "token": "9b379191-39a0-37c5-964d-34ab813667a1",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012376",
+        "token": "3670b1c0-4c1a-3a21-9ee3-f263dd997790",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012377",
+        "token": "cb7cdaac-7361-31f0-a7ec-528fa5139107",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012378",
+        "token": "8d4c351c-79a5-3fbe-a032-c67d56d69b3c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012379",
+        "token": "c87bf992-1deb-3d0d-99a5-54844578b104",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012380",
+        "token": "ce7b1660-e2e2-392a-aab0-91f608ac6a52",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012381",
+        "token": "76a9be7d-65a2-32ad-a2d2-a925116eb254",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012382",
+        "token": "d57c904f-433d-39b2-8b03-29b4337c25b0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012383",
+        "token": "f8e3fdbb-bc68-3b93-9674-1a69d65ebac0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012384",
+        "token": "d100f285-f78a-35b5-b652-030695266d9e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012385",
+        "token": "4c9e144e-e751-3a40-a276-d7f3ffaffd2b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012386",
+        "token": "ed84edbc-e406-3605-8044-885d26d26a56",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012387",
+        "token": "672ca8ca-73d8-3215-a8e8-0a3f8f9824a8",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012388",
+        "token": "ace7e170-fcb7-39b0-9b16-09c78a282875",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012389",
+        "token": "198dd552-8f9c-3868-8105-41527c939893",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012390",
+        "token": "da8ac361-447d-3ecc-a6a9-23fdba48394e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012391",
+        "token": "e0c63d2f-9ce9-34d9-b57a-914c61ceace7",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012392",
+        "token": "3ea1de1c-7339-3422-9c84-c9edaedc1ebf",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012393",
+        "token": "f16166fe-bb92-3757-8518-532f6fa17653",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012394",
+        "token": "3b394eb8-44d4-3f10-84cf-87a0019ddcb0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012395",
+        "token": "b53a25d3-425f-375b-97a4-149695bca5ad",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012396",
+        "token": "634ec132-8d49-3512-8fc9-544df1870eb7",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012397",
+        "token": "bc43d6e1-9fad-3fcc-8292-a483a3af7926",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012398",
+        "token": "7a3b5de1-cbe3-31ce-b101-bacee1567072",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012399",
+        "token": "39f6cac0-23f0-3a2a-858e-1634674061d3",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012400",
+        "token": "704f072d-c447-3c79-9c2e-e23b8d6073fc",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012401",
+        "token": "4dae07c2-a525-3c80-afe8-bc3bf6da3d03",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012402",
+        "token": "b8a91dd6-fe99-37b6-b658-e0d85b6adc53",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012403",
+        "token": "00d3a332-7c5c-3cd2-8ef7-283a1e1ec07e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012404",
+        "token": "868d2a5b-3336-340d-bcd2-8cdfbd3c5317",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012405",
+        "token": "aef6567a-4308-3884-b093-4d0a64ad8a68",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012406",
+        "token": "07448a50-8fbd-3acb-9680-f5c28eb76e12",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012407",
+        "token": "a104ef2f-43bb-3058-99ab-41de15ddfc65",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012408",
+        "token": "5c58ee58-bd86-3347-ac94-861a77cb3a3c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012409",
+        "token": "4a6d3cd2-745e-327a-9b9f-c7eb3ab0a230",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012410",
+        "token": "cf6a2f61-c99f-302c-9fba-134f4861c60d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012411",
+        "token": "9fe57570-868a-38a8-be06-48b389a9fd3c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012412",
+        "token": "1feb5ba9-ab19-3644-bf17-2b378250b1d5",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012413",
+        "token": "f60dd6ca-d5fe-3ce7-8908-6e537caa322b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012414",
+        "token": "27c6b9ce-dd8f-3ba0-82e3-21e888d72b44",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012415",
+        "token": "e4908f5a-36a1-3e08-aee9-66f925d4173b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012416",
+        "token": "e09e267d-097a-3348-a072-437defe2c4dc",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012417",
+        "token": "5d02f607-cb67-3495-9e61-aeccf45df830",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012418",
+        "token": "4eb9ae1b-c815-365c-a8c4-a8f596cc4546",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012419",
+        "token": "bcf04090-5163-3b4f-81e4-4f5d12b968d4",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012420",
+        "token": "5740e606-8aa5-3b96-b895-25a10741e30f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012421",
+        "token": "3410ab82-97a1-3d78-afa5-268bb88ef6c7",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012422",
+        "token": "ec012035-f470-305a-bbdc-e497955f3d9d",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012423",
+        "token": "fae98919-d26a-39c5-98c5-dd9a4d972620",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012424",
+        "token": "c83e3bf1-2ea8-3f86-86af-2b7ade0c33e0",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012425",
+        "token": "681e0bd1-d1d1-3318-8e9c-df3fe860fed7",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012426",
+        "token": "390039c9-9550-3af2-8663-094d1ba47f2c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012427",
+        "token": "15ae51b0-063f-335a-b1d1-c46cd6054173",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012428",
+        "token": "37db6845-b259-397d-9149-f06c197fc75f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012429",
+        "token": "786aca5d-27aa-3c78-b3fb-b0b562d7d14c",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012430",
+        "token": "341d1efa-1093-38a9-8359-879c935f74cd",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012431",
+        "token": "ef5e0789-7b45-3c5f-bad4-388c769eddf9",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012432",
+        "token": "027a7258-6994-3a75-9d3e-b3e05aab0d15",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012433",
+        "token": "425e06b3-132b-35cf-9ab6-2dca2bf5e44f",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012434",
+        "token": "be4564ef-36f6-39c0-abf1-561f56c0617b",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012435",
+        "token": "437bc16b-ba63-3e44-9fa5-5951a337a152",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012436",
+        "token": "fa15fb89-fbe1-3018-a042-fd524c1af329",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012437",
+        "token": "243141df-f697-3d07-a020-cfcdc2482082",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012438",
+        "token": "bc4b2d40-47d8-363a-b4f9-11f0b6118955",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012439",
+        "token": "fe2cbbed-eb02-35f0-8199-0a5b72131183",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012440",
+        "token": "0568d2ca-55d0-310e-b2c5-78f0b9e7f34e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      },
+      {
+        "frame": "012441",
+        "token": "1e2dd129-2dc4-3243-b1c5-30f3adb2847e",
+        "operation": [
+          "Car",
+          "001846"
+        ]
+      }
+    ]
+  }
