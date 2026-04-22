@@ -218,24 +218,15 @@ class XETV2X(MVXTwoStageDetector):
             0 if self.memory_bank is None else self.memory_bank.max_his_length
         )
         self.test_track_instances = None
-        # <<<
-
-        # >>> bev
         self.bev_h = self.pts_bbox_head.bev_h
         self.bev_w = self.pts_bbox_head.bev_w
         self.freeze_bev_encoder = freeze_bev_encoder
-        # <<<
-
-        # >>> criterion
         self.criterion = build_loss(loss_cfg)
         self.task_loss_weight = task_loss_weight
         assert set(task_loss_weight.keys()) == {'track'}   
-        # <<<
-        
-        # >>> matrix
         self.l2g_r_mat = None
         self.l2g_t = None
-        # <<<
+        self.mm_sca_lidar_first = mm_sca_lidar_first
         
     def extract_img_feat(self, img, len_queue=None):
         """Extract features of images."""

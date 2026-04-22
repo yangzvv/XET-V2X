@@ -31,17 +31,18 @@ class XETV2XBEVFormerEncoder(TransformerLayerSequence):
         self.num_cams = num_cams
         self.num_lidars = num_lidars
         self.calib_error_offset = []
-        if use_cam_calib_error_offset and use_calib_error_offset:
-            self.cam_calib_error_offset = nn.Parameter(torch.zeros(self.num_cams, 2))
-            self.calib_error_offset.append(self.cam_calib_error_offset)
-        else:
-            self.calib_error_offset.append(None)
-
-        if use_lidar_calib_error_offset and use_calib_error_offset:
-            self.lidar_calib_error_offset = nn.Parameter(torch.zeros(self.num_lidars, 2))
-            self.calib_error_offset.append(self.lidar_calib_error_offset)
-        else:
-            self.calib_error_offset.append(None)
+        if use_cam_calib_error_offset:
+            if use_calib_error_offset:
+                self.cam_calib_error_offset = nn.Parameter(torch.Tensor(self.num_cams, 2))
+                self.calib_error_offset.append(self.cam_calib_error_offset)
+            else:
+                self.calib_error_offset.append(None)
+        if use_lidar_calib_error_offset:
+            if use_calib_error_offset:
+                self.lidar_calib_error_offset = nn.Parameter(torch.Tensor(self.num_lidars, 2))
+                self.calib_error_offset.append(self.lidar_calib_error_offset)
+            else:
+                self.calib_error_offset.append(None)
     
     @staticmethod
     def get_reference_points(H, W, Z=8, num_points_in_pillar=4, dim='3d', bs=1, device='cuda', dtype=torch.float):
