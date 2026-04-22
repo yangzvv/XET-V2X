@@ -327,7 +327,6 @@ def _fill_trainval_infos(nusc,
         cav_valid_flag_record = load_json(load_valid_flag_record_path)
 
     for sample in mmcv.track_iter_progress(nusc.sample):
-        # 获取时延帧信息
         prev_sample_token = sample['prev']
         if prev_sample_token == '':
             continue
@@ -338,7 +337,6 @@ def _fill_trainval_infos(nusc,
             continue
         prev_prev_sample = nusc.get('sample', prev_prev_sample_token)
 
-        # ==== 处理自车当前帧 ====
         lidar_token = sample['data']['LIDAR_TOP']
         sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP'])
         cs_record = nusc.get('calibrated_sensor', sd_rec['calibrated_sensor_token'])
@@ -349,23 +347,18 @@ def _fill_trainval_infos(nusc,
         can_bus = _get_can_bus_info(nusc, nusc_can_bus, sample)
         if not use_can_bus:
             can_bus = np.zeros(18,dtype=float)
-        # ========
 
-        # ==== 处理自车 prev 帧 ====
         prev_lidar_token = prev_sample['data']['LIDAR_TOP']
         prev_sd_rec = nusc.get('sample_data', prev_sample['data']['LIDAR_TOP'])
         prev_cs_record = nusc.get('calibrated_sensor', prev_sd_rec['calibrated_sensor_token'])
         prev_pose_record = nusc.get('ego_pose', prev_sd_rec['ego_pose_token'])
         prev_lidar_path, prev_boxes, _ = nusc.get_sample_data(prev_lidar_token)
-        # ========
 
-        # ==== 处理自车 prev-prev 帧 ====
         prev_prev_lidar_token = prev_prev_sample['data']['LIDAR_TOP']
         prev_prev_sd_rec = nusc.get('sample_data', prev_prev_sample['data']['LIDAR_TOP'])
         prev_prev_cs_record = nusc.get('calibrated_sensor', prev_prev_sd_rec['calibrated_sensor_token'])
         prev_prev_pose_record = nusc.get('ego_pose', prev_prev_sd_rec['ego_pose_token'])
         prev_prev_lidar_path, prev_prev_boxes, _ = nusc.get_sample_data(prev_prev_lidar_token)
-        # ========
 
         info = {
             'lidar_path': lidar_path,
@@ -425,9 +418,7 @@ def _fill_trainval_infos(nusc,
             # keep consistent with spd
             # indeed veh is the id1, and inf is other id.
             # info['token_inf'] = sample['token']
-
-            # ==== 处理协同端当前帧 ====
-            inf_sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP_id_2'])  # yzw
+            inf_sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP_id_2'])
             inf_cs_record = nusc.get('calibrated_sensor', inf_sd_rec['calibrated_sensor_token'])
             inf_pose_record = nusc.get('ego_pose', inf_sd_rec['ego_pose_token'])
             inf_l2e_t = np.array(inf_cs_record['translation']).reshape(3)
@@ -443,14 +434,10 @@ def _fill_trainval_infos(nusc,
             r = ((veh_l2e_r.T @ veh_e2g_r.T) @ (np.linalg.inv(inf_e2g_r).T @ np.linalg.inv(inf_l2e_r).T)).T
             t = (veh_l2e_t @ veh_e2g_r.T + veh_e2g_t) @ (np.linalg.inv(inf_e2g_r).T @ np.linalg.inv(inf_l2e_r).T)
             t -= (inf_e2g_t @ (np.linalg.inv(inf_e2g_r).T @ np.linalg.inv(inf_l2e_r).T) + inf_l2e_t @ (np.linalg.inv(inf_l2e_r).T))
-            # yzw 等效公式
-            # t = (((veh_l2e_t @ veh_e2g_r.T + veh_e2g_t) - inf_e2g_t) @ np.linalg.inv(inf_e2g_r).T - inf_l2e_t) @ np.linalg.inv(inf_l2e_r).T
 
             info['VehLidar2InfLidar_rotation'], info['VehLidar2InfLidar_translation'] = r,t  # y = r * x + t.reshape(3, 1)
-            # ========
 
-            # ==== 处理协同端 prev 帧 ====
-            prev_inf_sd_rec = nusc.get('sample_data', prev_sample['data']['LIDAR_TOP_id_2'])  # yzw
+            prev_inf_sd_rec = nusc.get('sample_data', prev_sample['data']['LIDAR_TOP_id_2'])
             prev_inf_cs_record = nusc.get('calibrated_sensor', prev_inf_sd_rec['calibrated_sensor_token'])
             prev_inf_pose_record = nusc.get('ego_pose', prev_inf_sd_rec['ego_pose_token'])
             prev_inf_l2e_t = np.array(prev_inf_cs_record['translation']).reshape(3)
@@ -474,10 +461,8 @@ def _fill_trainval_infos(nusc,
             t -= (prev_inf_e2g_t @ (np.linalg.inv(prev_inf_e2g_r).T @ np.linalg.inv(prev_inf_l2e_r).T) + prev_inf_l2e_t @ (np.linalg.inv(prev_inf_l2e_r).T))
 
             info['VehLidar_1delay2InfLidar_1delay_rotation'], info['VehLidar_1delay2InfLidar_1delay_translation'] = r,t
-            # ========
 
-            # ==== 处理协同端 prev-prev 帧 ====
-            prev_prev_inf_sd_rec = nusc.get('sample_data', prev_prev_sample['data']['LIDAR_TOP_id_2'])  # yzw
+            prev_prev_inf_sd_rec = nusc.get('sample_data', prev_prev_sample['data']['LIDAR_TOP_id_2'])
             prev_prev_inf_cs_record = nusc.get('calibrated_sensor', prev_prev_inf_sd_rec['calibrated_sensor_token'])
             prev_prev_inf_pose_record = nusc.get('ego_pose', prev_prev_inf_sd_rec['ego_pose_token'])
             prev_prev_inf_l2e_t = np.array(prev_prev_inf_cs_record['translation']).reshape(3)
@@ -501,7 +486,6 @@ def _fill_trainval_infos(nusc,
             t -= (prev_prev_inf_e2g_t @ (np.linalg.inv(prev_prev_inf_e2g_r).T @ np.linalg.inv(prev_prev_inf_l2e_r).T) + prev_prev_inf_l2e_t @ (np.linalg.inv(prev_prev_inf_l2e_r).T))
 
             info['VehLidar_2delay2InfLidar_2delay_rotation'], info['VehLidar_2delay2InfLidar_2delay_translation'] = r,t
-            # ========
             
         if sample['next'] == '':
             frame_idx = 0
@@ -646,7 +630,6 @@ def _fill_trainval_infos(nusc,
             for i in range(len(names)):
                 if names[i] in NuScenesDataset.NameMapping:
                     names[i] = NuScenesDataset.NameMapping[names[i]]
-                # yzw
                 if names[i] == 'vehicle.emergency.police':
                     names[i] = 'car'
             names = np.array(names)
@@ -735,7 +718,6 @@ def obtain_sensor2top(nusc,
 
     # obtain the RT from sensor to Top LiDAR
     # sweep->ego->global->ego->lidar
-    # yzw 传感器坐标系（路端激光雷达或相机坐标系）到自车激光雷达坐标系的旋转平移矩阵
     l2e_r_s_mat = Quaternion(l2e_r_s).rotation_matrix
     e2g_r_s_mat = Quaternion(e2g_r_s).rotation_matrix
     R = (l2e_r_s_mat.T @ e2g_r_s_mat.T) @ (

@@ -27,7 +27,7 @@ v2xsim_instance_path = "./datasets/V2X-Sim-full-v2i/v1.0-trainval/instance.json"
 v2xsim_sample_annotation_path = "./datasets/V2X-Sim-full-v2i/v1.0-trainval/sample_annotation.json"
 instance_token_v2xsim_filtered_path = "./datasets/V2X-Sim-full-v2i/filter_annotations_2.0-mini.json"
 save_valid_flag_record_path = './datasets/V2X-Sim-full-v2i/valid_flag_record.json'
-load_valid_flag_record_path = './datasets/V2X-Sim-full-id0-4cams-30/valid_flag_record.json'
+load_valid_flag_record_path = './datasets/V2X-Sim-full-id0/valid_flag_record.json'
 
 def load_json(path):
     with open(path, mode="r") as f:
@@ -368,7 +368,7 @@ def _fill_trainval_infos(nusc,
             info['token_inf'] = sample['token']
             # id 5
             # cav_lidar_token = sample['data']['LIDAR_TOP_id_5']
-            inf_sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP_id_0'])  # yzw
+            inf_sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP_id_0'])
             inf_cs_record = nusc.get('calibrated_sensor',
                                 inf_sd_rec['calibrated_sensor_token'])
             inf_pose_record = nusc.get('ego_pose', inf_sd_rec['ego_pose_token'])
@@ -490,7 +490,6 @@ def _fill_trainval_infos(nusc,
             for i in range(len(names)):
                 if names[i] in NuScenesDataset.NameMapping:
                     names[i] = NuScenesDataset.NameMapping[names[i]]
-                # yzw
                 if names[i] == 'vehicle.emergency.police':
                     names[i] = 'car'
             names = np.array(names)

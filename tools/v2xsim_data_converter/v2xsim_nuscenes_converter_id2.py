@@ -468,7 +468,6 @@ def _fill_trainval_infos(nusc,
             for i in range(len(names)):
                 if names[i] in NuScenesDataset.NameMapping:
                     names[i] = NuScenesDataset.NameMapping[names[i]]
-                # yzw
                 if names[i] == 'vehicle.emergency.police':
                     names[i] = 'car'
             names = np.array(names)

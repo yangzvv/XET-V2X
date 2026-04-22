@@ -368,7 +368,7 @@ def _fill_trainval_infos(nusc,
             info['token_inf'] = sample['token']
             # id 5
             # cav_lidar_token = sample['data']['LIDAR_TOP_id_5']
-            inf_sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP_id_2'])  # yzw
+            inf_sd_rec = nusc.get('sample_data', sample['data']['LIDAR_TOP_id_2'])
             inf_cs_record = nusc.get('calibrated_sensor',
                                 inf_sd_rec['calibrated_sensor_token'])
             inf_pose_record = nusc.get('ego_pose', inf_sd_rec['ego_pose_token'])
@@ -489,7 +489,6 @@ def _fill_trainval_infos(nusc,
             for i in range(len(names)):
                 if names[i] in NuScenesDataset.NameMapping:
                     names[i] = NuScenesDataset.NameMapping[names[i]]
-                # yzw
                 if names[i] == 'vehicle.emergency.police':
                     names[i] = 'car'
             names = np.array(names)
