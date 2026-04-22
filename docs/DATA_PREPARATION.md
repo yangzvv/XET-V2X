@@ -94,27 +94,61 @@ After successful execution, your dataset directories will be populated with the 
 
 ### 4. Construct Delay-Specific Dataset Variants
 
-To evaluate the perception system under varying communication latencies, you must construct dataset variants corresponding to different delay frames. 
+To evaluate the perception system under varying communication latencies, dataset variants corresponding to different delay frames must be constructed.
 
-The parameter `k` represents the delay frame index ($k \in \{0, 1, 2, 3\}$), where $k=0$ denotes synchronous data (no delay), and $k>0$ represents asynchronous data with $k \times 100$ ms delay (assuming a 10Hz sampling frequency).
+The parameter $k$ represents the delay frame index ($k \in \{0, 1, 2, 3\}$), where $k=0$ denotes synchronous data (no delay), and $k>0$ represents asynchronous data with a $k \times 100$ ms delay (assuming a 10 Hz sampling frequency). Crucially, the sequence identifiers are mapped to the delay parameter $k$ by adding an offset of $k \times 100$ to the base sequence IDs (e.g., base sequence `0015` becomes `0115` for $k=1$).
 
-You can generate the specific dataset by running the script below. Simply set the `k` variable at the top of the command to your desired delay value (`0`, `1`, `2`, or `3`):
+You can generate the specific dataset variants by executing the corresponding commands below based on your desired delay configuration:
 
+**For $k = 0$ (Synchronous Data):**
 ```bash
-# Set your target delay frame index (0, 1, 2, or 3)
-k=0
-
 python tools/v2xseq_data_converter/gen_xetv2x_dataset.py \
     --input ./datasets/V2X-Seq-SPD \
     --ln-input ./datasets/V2X-Seq-SPD \
-    --output ./datasets/V2X-Seq-SPD-Delay-${k} \
+    --output ./datasets/V2X-Seq-SPD-Delay-0 \
     --sequences 0000 0001 0002 0003 0004 0005 0007 0008 0010 0014 0015 0016 0017 0018 0020 0021 0022 0023 0025 0029 0030 0032 0033 0034 0035 0036 0037 0040 0041 0042 0047 0048 0049 0050 0052 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0066 0068 0070 0071 0072 0073 0075 0077 0078 0079 0080 0081 0082 0084 0085 0086 0087 0088 0089 0092 0093 0094 \
     --update-label \
     --freq 10 \
-    --delay ${k}
+    --delay 0
 ```
 
-**Note**: This script will extract the specific sequence data and organize it into a new directory named `V2X-Seq-SPD-Delay-{k}`, utilizing soft links (`--ln-input`) for heavy sensor data (like images and point clouds) to save disk space.
+**For $k = 1$ (100 ms Delay):**
+```bash
+python tools/v2xseq_data_converter/gen_xetv2x_dataset.py \
+    --input ./datasets/V2X-Seq-SPD \
+    --ln-input ./datasets/V2X-Seq-SPD \
+    --output ./datasets/V2X-Seq-SPD-Delay-1 \
+    --sequences 0100 0101 0102 0103 0104 0105 0107 0108 0110 0114 0115 0116 0117 0118 0120 0121 0122 0123 0125 0129 0130 0132 0133 0134 0135 0136 0137 0140 0141 0142 0147 0148 0149 0150 0152 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0166 0168 0170 0171 0172 0173 0175 0177 0178 0179 0180 0181 0182 0184 0185 0186 0187 0188 0189 0192 0193 0194 \
+    --update-label \
+    --freq 10 \
+    --delay 1
+```
+
+**For $k = 2$ (200 ms Delay):**
+```bash
+python tools/v2xseq_data_converter/gen_xetv2x_dataset.py \
+    --input ./datasets/V2X-Seq-SPD \
+    --ln-input ./datasets/V2X-Seq-SPD \
+    --output ./datasets/V2X-Seq-SPD-Delay-2 \
+    --sequences 0200 0201 0202 0203 0204 0205 0207 0208 0210 0214 0215 0216 0217 0218 0220 0221 0222 0223 0225 0229 0230 0232 0233 0234 0235 0236 0237 0240 0241 0242 0247 0248 0249 0250 0252 0254 0255 0256 0257 0258 0259 0260 0261 0262 0263 0266 0268 0270 0271 0272 0273 0275 0277 0278 0279 0280 0281 0282 0284 0285 0286 0287 0288 0289 0292 0293 0294 \
+    --update-label \
+    --freq 10 \
+    --delay 2
+```
+
+**For $k = 3$ (300 ms Delay):**
+```bash
+python tools/v2xseq_data_converter/gen_xetv2x_dataset.py \
+    --input ./datasets/V2X-Seq-SPD \
+    --ln-input ./datasets/V2X-Seq-SPD \
+    --output ./datasets/V2X-Seq-SPD-Delay-3 \
+    --sequences 0300 0301 0302 0303 0304 0305 0307 0308 0310 0314 0315 0316 0317 0318 0320 0321 0322 0323 0325 0329 0330 0332 0333 0334 0335 0336 0337 0340 0341 0342 0347 0348 0349 0350 0352 0354 0355 0356 0357 0358 0359 0360 0361 0362 0363 0366 0368 0370 0371 0372 0373 0375 0377 0378 0379 0380 0381 0382 0384 0385 0386 0387 0388 0389 0392 0393 0394 \
+    --update-label \
+    --freq 10 \
+    --delay 3
+```
+
+**Note:** This script extracts the specified sequence data and organizes it into a new directory named `V2X-Seq-SPD-Delay-{k}`. Soft links (`--ln-input`) are utilized for heavy sensor data (such as images and point clouds) to optimize disk space usage.
 
 ### 5. Convert to nuScenes Format
 

@@ -45,7 +45,7 @@ def update_label_file(input_label_file_path, output_label_file_path, token, oper
     write_json(label_info, output_label_file_path)
 
 
-def update_label_from_json(input_dataset_path, output_dataset_path, updata_label_info_path="./tools/spd_data_converter/update_label_info.json"):
+def update_label_from_json(input_dataset_path, output_dataset_path, updata_label_info_path="./tools/v2xseq_data_converter/update_label_info.json"):
     update_label_info = read_json(updata_label_info_path)
 
     list_veh_update_info = update_label_info["vehicle-side"]
@@ -100,7 +100,7 @@ def gen_sequence_data_info(input_dataset_path, output_dataset_path, list_sequenc
 
     interval = 10 // freq
     for sequence in list_sequences:
-        print("sequence:", sequence)
+        # print("sequence:", sequence)
         if sequence not in dict_coop_sequence2frames:
             continue
         seq_frames = list(sorted(dict_coop_sequence2frames[sequence]))
@@ -160,6 +160,7 @@ def filt_label_coop(input_label_file, output_label_file):
 
 
 def copy_dataset(input_dataset_path, ln_input_dataset_path, output_dataset_path, update_label):
+    full_src_path = os.path.normpath(os.path.join(os.getcwd(), ln_input_dataset_path))
     veh_data_info = read_json(os.path.join(output_dataset_path, 'vehicle-side/data_info.json'))
     inf_data_info = read_json(os.path.join(output_dataset_path, 'infrastructure-side/data_info.json'))
     coop_data_info = read_json(os.path.join(output_dataset_path, 'cooperative/data_info.json'))
@@ -169,24 +170,27 @@ def copy_dataset(input_dataset_path, ln_input_dataset_path, output_dataset_path,
 
     for i in tqdm(veh_data_info, desc="Copying vehicle-side"):
         os.system(f"cp -f {input_dataset_path}/vehicle-side/{i['label_camera_std_path']} {output_dataset_path}/vehicle-side/label/camera/")
-        filt_label(f"datasets/SPD-label-clean/cooperative-vehicle-infrastructure/vehicle-side/{i['label_lidar_std_path']}", f"{output_dataset_path}/vehicle-side/{i['label_lidar_std_path']}")
-    os.system(f"ln -s {ln_input_dataset_path}/vehicle-side/calib {output_dataset_path}/vehicle-side/calib")
-    os.system(f"ln -s {ln_input_dataset_path}/vehicle-side/image {output_dataset_path}/vehicle-side/image")
-    os.system(f"ln -s {ln_input_dataset_path}/vehicle-side/velodyne_180deg {output_dataset_path}/vehicle-side/velodyne")
+        os.system(f"cp -f {input_dataset_path}/vehicle-side/{i['label_lidar_std_path']} {output_dataset_path}/vehicle-side/label/lidar/")
+        # filt_label(f"datasets/SPD-label-clean/cooperative-vehicle-infrastructure/vehicle-side/{i['label_lidar_std_path']}", f"{output_dataset_path}/vehicle-side/{i['label_lidar_std_path']}")
+    os.system(f"ln -s {full_src_path}/vehicle-side/calib {output_dataset_path}/vehicle-side/calib")
+    os.system(f"ln -s {full_src_path}/vehicle-side/image {output_dataset_path}/vehicle-side/image")
+    os.system(f"ln -s {full_src_path}/vehicle-side/velodyne_180deg {output_dataset_path}/vehicle-side/velodyne")
 
     for j in tqdm(inf_data_info, desc="Copying infrastructure-side"):
         os.system(f"cp {input_dataset_path}/infrastructure-side/{j['label_camera_std_path']} {output_dataset_path}/infrastructure-side/label/camera/")
-        filt_label(f"datasets/SPD-label-clean/cooperative-vehicle-infrastructure/infrastructure-side/{j['label_lidar_std_path']}", f"{output_dataset_path}/infrastructure-side/{j['label_lidar_std_path']}")
-    os.system(f"ln -s {ln_input_dataset_path}/infrastructure-side/calib {output_dataset_path}/infrastructure-side/calib")
-    os.system(f"ln -s {ln_input_dataset_path}/infrastructure-side/image {output_dataset_path}/infrastructure-side/image")
-    os.system(f"ln -s {ln_input_dataset_path}/infrastructure-side/velodyne {output_dataset_path}/infrastructure-side/velodyne")
+        os.system(f"cp {input_dataset_path}/infrastructure-side/{j['label_lidar_std_path']} {output_dataset_path}/infrastructure-side/label/virtuallidar/")
+        # filt_label(f"datasets/SPD-label-clean/cooperative-vehicle-infrastructure/infrastructure-side/{j['label_lidar_std_path']}", f"{output_dataset_path}/infrastructure-side/{j['label_lidar_std_path']}")
+    os.system(f"ln -s {full_src_path}/infrastructure-side/calib {output_dataset_path}/infrastructure-side/calib")
+    os.system(f"ln -s {full_src_path}/infrastructure-side/image {output_dataset_path}/infrastructure-side/image")
+    os.system(f"ln -s {full_src_path}/infrastructure-side/velodyne {output_dataset_path}/infrastructure-side/velodyne")
 
     for k in tqdm(coop_data_info, desc="Copying cooperative"):
-        os.system(f"cp -f datasets/SPD-label-clean/cooperative-vehicle-infrastructure/cooperative/new_label/{int(k['vehicle_frame'][1:]):06d}.json {output_dataset_path}/cooperative/label/")
-    os.system(f"ln -s {ln_input_dataset_path}/vehicle-side/calib {output_dataset_path}/cooperative/calib")
-    os.system(f"ln -s {ln_input_dataset_path}/vehicle-side/image {output_dataset_path}/cooperative/image")
-    os.system(f"ln -s {ln_input_dataset_path}/vehicle-side/velodyne_180deg {output_dataset_path}/cooperative/velodyne")
-    os.system(f"ln -s {ln_input_dataset_path}/maps {output_dataset_path}/maps")
+        os.system(f"cp -f {input_dataset_path}/cooperative/label/{int(k['vehicle_frame'][1:]):06d}.json {output_dataset_path}/cooperative/label/")
+        # os.system(f"cp -f datasets/SPD-label-clean/cooperative-vehicle-infrastructure/cooperative/new_label/{int(k['vehicle_frame'][1:]):06d}.json {output_dataset_path}/cooperative/label/")
+    os.system(f"ln -s {full_src_path}/vehicle-side/calib {output_dataset_path}/cooperative/calib")
+    os.system(f"ln -s {full_src_path}/vehicle-side/image {output_dataset_path}/cooperative/image")
+    os.system(f"ln -s {full_src_path}/vehicle-side/velodyne_180deg {output_dataset_path}/cooperative/velodyne")
+    os.system(f"ln -s {full_src_path}/maps {output_dataset_path}/maps")
 
 
 if __name__ == "__main__":

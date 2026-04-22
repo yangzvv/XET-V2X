@@ -374,7 +374,7 @@ def parse_args():
     parser.add_argument('--data-root', type=str, default="./datasets/V2X-Seq-SPD-Example")
     parser.add_argument('--save-root', type=str, default="./datasets/V2X-Seq-SPD-Example")
     parser.add_argument('--split-file', type=str, default="./data/split_datas/cooperative-split-data-spd.json")
-    parser.add_argument('--local-root', type=str, default="./tools/spd_data_converter/nuscenes_jsons")
+    parser.add_argument('--local-root', type=str, default="./tools/v2xseq_data_converter/nuscenes_jsons")
     parser.add_argument('--v2x-side', type=str, default="vehicle-side")
     parser.add_argument('--version', type=str, default="v1.0-trainval")
     parser.add_argument('--info-prefix', type=str, default="spd")

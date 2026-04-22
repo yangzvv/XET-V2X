@@ -375,8 +375,8 @@ model = dict(
 file_client_args = dict(backend="disk")
 
 dataset_type = "XETV2XSeqDataset"
-data_root = "./datasets/V2X-Seq-SPD-10Hz-O-V2-eval-1/cooperative/"
-info_root = "./data/infos/V2X-Seq-SPD-10Hz-O-V2-eval-1/cooperative/"
+data_root = "./datasets/V2X-Seq-SPD-Delay-1/cooperative/"
+info_root = "./data/infos/V2X-Seq-SPD-Delay-1/cooperative/"
 ann_file_train = info_root + f"spd_infos_temporal_train.pkl"
 ann_file_val = info_root + f"spd_infos_temporal_val.pkl"
 ann_file_test = info_root + f"spd_infos_temporal_val.pkl"

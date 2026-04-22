@@ -73,7 +73,7 @@ mkdir -p "${TARGET_DIR}/can_bus"
 
 # 9. Copy map directory
 echo "-> Copying map files..."
-cp -r "${BASE_DIR}/map" "${TARGET_DIR}/map"
+cp -r "${BASE_DIR}/maps" "${TARGET_DIR}/"
 
 # 10. Modify sensor.json (Replace specific LIDAR_TOP_id_X with LIDAR_TOP)
 echo "-> Modifying sensor.json..."
