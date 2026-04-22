@@ -274,17 +274,17 @@ Run the post-processing script for all generated dataset variants:
 
 ```bash
 # Post-process Single-Agent setups
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-id1
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-id2
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-id0
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-id1
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-id2
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-id0
 
 # Post-process Cooperative setups (Synchronous)
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-v2v
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-v2i
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-v2v
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-v2i
 
 # Post-process Cooperative setups (Asynchronous / Delay)
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-v2v-delay
-bash tools/v2xsim_postprocess.sh V2X-Sim-full-v2i-delay
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-v2v-delay
+bash tools/v2xsim_data_converter/v2xsim_postprocess.sh V2X-Sim-full-v2i-delay
 ```
 
 ### 6. Filter Valid Cooperative Scenes

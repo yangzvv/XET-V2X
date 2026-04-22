@@ -1,7 +1,7 @@
 import argparse
 from os import path as osp
 import sys
-from tools.v2xsim_data_converter import v2xsim_nuscenes_converter_v2i_i30 as nuscenes_converter
+from tools.v2xsim_data_converter import v2xsim_nuscenes_converter_v2i as nuscenes_converter
 sys.path.append('..')
 
 
