@@ -206,6 +206,12 @@ Download the V2X-Sim 2.0 dataset from the [official repository](https://huggingf
 └── v1.0-trainval/              # nuScenes-format JSON annotations
 ```
 
+To support the map semantic parsing and prevent initialization errors with the `NuScenesMap` API, you need to configure the underlying map metadata. Download the required [map files](https://drive.google.com/drive/folders/1Pzyh0le0KWIzAXaTZIjQ2iplZuf4NO1k?usp=drive_link) and place them exactly into the following directory:
+
+```bash
+tools/v2xsim_data_converter/maps/
+```
+
 ### 2. Filter LiDAR Field of View (FOV)
 
 To simulate realistic sensor limitations and align the perception range across different agents, we filter the raw point clouds. For V2X-Sim, we apply a 90-degree frontal FOV filter ($\pm45^\circ$) to specific agents (`id_1` and `id_2`), while keeping `id_0` unfiltered.
