@@ -46,6 +46,11 @@ WORK_DIR=$(echo ${CFG%.*} | sed -e "s/configs/work_dirs/g")/
 
 To evaluate a fully trained model on the validation or test set, use the distributed evaluation script. 
 
+**Pre-trained Models**
+
+Before running the evaluation, please download our pre-trained model weights and place them in the `./ckpts/` directory.
+* [XET-V2X Pre-trained Checkpoints](https://drive.google.com/drive/folders/1clhhDkDv5cqM_gWiDZ5BiO49oi8SxwKc?usp=drive_link)
+
 **Quick Inference**
 
 Run the following command to perform evaluation. You need to provide the config file, the trained checkpoint path, and the number of GPUs. 
