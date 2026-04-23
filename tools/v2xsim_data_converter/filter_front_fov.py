@@ -3,6 +3,7 @@ import argparse
 import numpy as np
 from tqdm import tqdm
 from nuscenes.utils.data_classes import LidarPointCloud
+from pypcd.pypcd import PointCloud
 
 def filter_front(points: np.ndarray, fov_deg: float = 45.0) -> np.ndarray:
     """
@@ -22,6 +23,44 @@ def filter_front(points: np.ndarray, fov_deg: float = 45.0) -> np.ndarray:
     
     mask = np.logical_and(angles >= -fov_rad, angles <= fov_rad)
     return points[:, mask]
+
+def save_as_pcd(points: np.ndarray, output_path: str):
+    """
+    Save the point cloud as a standard .pcd file with proper headers using pypcd.
+    This strictly matches the format expected by mmcv/mmdet3d dataloaders.
+    
+    Args:
+        points: (4, N) numpy array.
+        output_path: Destination path for the .pcd file.
+    """
+    points_transposed = points.T  # Shape becomes [N, 4]
+    num_points = points_transposed.shape[0]
+    
+    # 1. Build Standard PCD Header
+    header = {
+        'version': .7,
+        'fields': ['x', 'y', 'z', 'intensity'],
+        'size': [4, 4, 4, 4],          # 4 bytes for float32
+        'type': ['F', 'F', 'F', 'F'],  # F = Float
+        'count': [1, 1, 1, 1],
+        'width': num_points,
+        'height': 1,                   # 1 means unorganized point cloud
+        'viewpoint': [0, 0, 0, 1, 0, 0, 0],
+        'points': num_points,
+        'data': 'binary'               # Explicitly define data type
+    }
+
+    # 2. Convert to numpy record array format required by pypcd
+    pc_data = np.core.records.fromarrays(
+        points,  # Use original [4, N] format for fromarrays
+        names=header['fields'],
+        formats=['f4', 'f4', 'f4', 'f4']
+    )
+    
+    # 3. Instantiate and save
+    pcd = PointCloud(header, pc_data)
+    # Using 'binary' compression drastically speeds up downstream PyTorch dataloading
+    pcd.save_pcd(output_path, compression='binary')
 
 
 def process_folder(input_dir: str, output_dir: str, fov_deg: float = 45.0, apply_filter: bool = True):
@@ -55,8 +94,8 @@ def process_folder(input_dir: str, output_dir: str, fov_deg: float = 45.0, apply
         else:
             pts_filt = pc.points
             
-        # 3. Save as raw binary float32 (standard for NuScenes/KITTI parsing)
-        pts_filt.T.astype('float32').tofile(dst_path)
+        # 3. Save as standard .pcd with header (Fixed the bug here)
+        save_as_pcd(pts_filt, dst_path)
 
     print("Processing complete.")
 
