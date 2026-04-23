@@ -295,21 +295,21 @@ Run the scene filtering script for the corresponding tracks. Note that `id1` (th
 
 ```bash
 # Filter Ego Vehicle (id1) for both V2V and V2I evaluation
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-id1 v2v
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-id1 v2i
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-id1 v2v
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-id1 v2i
 
 # Filter CAV (id2) - Only participates in V2V
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-id2 v2v
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-id2 v2v
 
 # Filter RSU (id0) - Only participates in V2I
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-id0 v2i
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-id0 v2i
 
 # Filter Cooperative setups (Synchronous & Asynchronous)
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-v2v v2v
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-v2v-delay v2v
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-v2v v2v
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-v2v-delay v2v
 
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-v2i v2i
-bash tools/v2xsim_filter_scenes.sh V2X-Sim-full-v2i-delay v2i
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-v2i v2i
+bash tools/v2xsim_data_converter/filter_v2xsim_scenes.sh V2X-Sim-full-v2i-delay v2i
 ```
 
 ### 7. Prepare Model Checkpoints

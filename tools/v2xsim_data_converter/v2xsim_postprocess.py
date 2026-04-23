@@ -47,11 +47,11 @@ def process_sequence_data(
     # Process frame by frame
     for frame_data in iterator:
         # Update LiDAR paths (replacing sweeps with sweeps_pcd)
-        frame_data["lidar_path"] = frame_data["lidar_path"].replace("sweeps", "sweeps_pcd").replace(".bin", "")
+        frame_data["lidar_path"] = frame_data["lidar_path"].replace("sweeps/", "sweeps_pcd/").replace(".bin", "")
         if "lidar_path_1delay" in frame_data:
-            frame_data["lidar_path_1delay"] = frame_data["lidar_path_1delay"].replace("sweeps", "sweeps_pcd").replace(".bin", "")
+            frame_data["lidar_path_1delay"] = frame_data["lidar_path_1delay"].replace("sweeps/", "sweeps_pcd/").replace(".bin", "")
         if "lidar_path_2delay" in frame_data:
-            frame_data["lidar_path_2delay"] = frame_data["lidar_path_2delay"].replace("sweeps", "sweeps_pcd").replace(".bin", "")
+            frame_data["lidar_path_2delay"] = frame_data["lidar_path_2delay"].replace("sweeps/", "sweeps_pcd/").replace(".bin", "")
         
         # Apply valid flag filtering
         mask = copy.deepcopy(frame_data["valid_flag"])

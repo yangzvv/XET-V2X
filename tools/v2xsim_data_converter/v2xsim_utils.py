@@ -14,33 +14,61 @@ def write_json(data, path):
         json.dump(data, f, indent=2)
 
 def process_instance(v2xsim_instances, v2xsim_sample_annotations):
-    annotations_mappings = {}
+    instance_to_anns = {inst['token']: [] for inst in v2xsim_instances}
     for annotation in v2xsim_sample_annotations:
-        annotations_mappings[annotation['token']] = annotation
+        if annotation['instance_token'] in instance_to_anns:
+            instance_to_anns[annotation['instance_token']].append(annotation)
+    
+    v2xsim_instances_new = []
+    v2xsim_sample_annotations_new = []
     
     for instance in tqdm(v2xsim_instances):
-        instance_token = instance['token']
-        first_annotation_token = instance['first_annotation_token']
-        nbr_annotations = instance['nbr_annotations']
+        anns = instance_to_anns.get(instance['token'], [])
 
-        current_annotation_token = first_annotation_token
-        for ii in range(nbr_annotations - 2):
-            current_annotation_token = annotations_mappings[current_annotation_token]['next']
+        if not anns:
+            continue
+
+        instance['first_annotation_token'] = anns[0]['token']
+        instance['last_annotation_token'] = anns[-1]['token']
+        instance['nbr_annotations'] = len(anns)
+
+        anns[0]['prev'] = ""
+        anns[-1]['next'] = ""
         
-        current_annotation_token_next = annotations_mappings[current_annotation_token]['next']
-        if current_annotation_token_next not in annotations_mappings.keys():
-            print("There is wrong instance token: ", instance_token)
-            instance['nbr_annotations'] = nbr_annotations - 1
-            instance['last_annotation_token'] = current_annotation_token
-
-            annotations_mappings[current_annotation_token]['next'] = ''
-
-    v2xsim_instances_new = v2xsim_instances
-    v2xsim_sample_annotations_new = []
-    for key in annotations_mappings.keys():
-        v2xsim_sample_annotations_new.append(annotations_mappings[key])
+        v2xsim_sample_annotations_new.extend(anns)
+            
+        v2xsim_instances_new.append(instance)
 
     return v2xsim_instances_new, v2xsim_sample_annotations_new
+
+# def process_instance(v2xsim_instances, v2xsim_sample_annotations):
+#     annotations_mappings = {}
+#     for annotation in v2xsim_sample_annotations:
+#         annotations_mappings[annotation['token']] = annotation
+    
+#     for instance in tqdm(v2xsim_instances):
+#         instance_token = instance['token']
+#         first_annotation_token = instance['first_annotation_token']
+#         nbr_annotations = instance['nbr_annotations']
+
+#         current_annotation_token = first_annotation_token
+#         for ii in range(nbr_annotations - 2):
+#             current_annotation_token = annotations_mappings[current_annotation_token]['next']
+        
+#         current_annotation_token_next = annotations_mappings[current_annotation_token]['next']
+#         if current_annotation_token_next not in annotations_mappings.keys():
+#             print("There is wrong instance token: ", instance_token)
+#             instance['nbr_annotations'] = nbr_annotations - 1
+#             instance['last_annotation_token'] = current_annotation_token
+
+#             annotations_mappings[current_annotation_token]['next'] = ''
+
+#     v2xsim_instances_new = v2xsim_instances
+#     v2xsim_sample_annotations_new = []
+#     for key in annotations_mappings.keys():
+#         v2xsim_sample_annotations_new.append(annotations_mappings[key])
+
+#     return v2xsim_instances_new, v2xsim_sample_annotations_new
 
 
 def process_sample_annotations(v2xsim_sample_annotations):
